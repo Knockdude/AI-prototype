@@ -15,4 +15,5 @@ def inicio():
             respuesta = "No encontré nada sobre eso."
     return render_template("index.html", respuesta=respuesta)
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
